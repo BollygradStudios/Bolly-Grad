@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+    <main class="container blog-form">
+        <h1 class="black-card-head"><span>Create Blog</span></h1>
+      <div class="col-md-8" style="margin: 10px auto;">
+        <form action="/create" method="POST" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="title" placeholder="Title of the Blog">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Image</label>
+            <input type="file" class="form-control" id="exampleFormControlInput2" name="img">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput3" class="form-label">Category</label>
+            <input type="text" class="form-control" id="exampleFormControlInput3" name="category" placeholder="Category of the Blog">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="desc" rows="3"></textarea>
+          </div>
+          <button class="btn btn-dark">Create</button>
+        </form>
+      </div>
+    </main>
+<%- include('../partials/footer') %>

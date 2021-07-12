@@ -1,0 +1,22 @@
+{
+  "name": "bolly-grad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "author": "Tejesh Bharadwaj",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^1.26.2",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "heroku": "^7.56.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.2",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.12"
+  }
+}

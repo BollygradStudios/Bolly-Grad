@@ -1,0 +1,36 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card mt-3 mb-3">
+                <div class="card-body">
+                  <form action="#" method="POST">
+                    <h5 class="card-title text-center">Filters</h5>
+                    <input type="radio" name="blog" value="" id="flexCheckDefault">
+                    <label for="flexCheckDefault">All</label><br>
+                    <input type="radio" name="blog" value="" id="flexCheckDefault2">
+                    <label for="flexCheckDefault2">Movies</label><br>
+                    <input type="radio" name="blog" value="" id="flexCheckDefault3">
+                    <label for="flexCheckDefault3">Dance</label><br>
+                    <input type="radio" name="blog" value="" id="flexCheckDefault4">
+                    <label for="flexCheckDefault4">Bollywood</label><br>
+                    <button class="btn btn-sm btn-dark">Search</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <% for(let b of blog){ %>
+              <div class="card mt-3 mb-3">
+                <div class="card-body">
+                  <h5 class="card-title text-center"><%= b.title %></h5>
+                  <p class="card-text"><%= b.desc %> </p>
+                  <p class="text-center"><a href="/blogs/<%= b._id %> " class="btn btn-dark">View Blog</a></p>
+                </div>
+            </div>  
+            <% } %> 
+        </div>
+    </div>
+</div>
+<%- include('../partials/footer') %>

@@ -1,0 +1,703 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-container {
+  background-image: url(/images/Dance.jpg);
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-container .hero-arrow {
+  display: none;
+}
+
+.nav-container {
+  height: 10vh;
+  background-color: #000;
+}
+
+.nav-container .navbar {
+  height: 100%;
+  width: 80vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .navbar .logo {
+  cursor: pointer;
+}
+
+.nav-container .navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .navbar .nav-links a {
+  text-decoration: none;
+  color: #9e9e9e;
+  cursor: pointer;
+}
+
+.nav-container .navbar .nav-links a:hover {
+  color: white;
+}
+
+.nav-container .navbar .hamburger {
+  display: none;
+}
+
+.container {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.black-card-head {
+  margin-top: 15px;
+  text-align: center;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+}
+
+.black-card-head span {
+  font-family: 'lobster', sans-serif;
+  border-bottom: 4px solid #CCC;
+  border-radius: 5px;
+}
+
+.black-card-head span:hover {
+  border-color: #000;
+}
+
+.about-BFTI h1 a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 20px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-BFTI h1 a:hover {
+  -webkit-box-shadow: 0px 2px 2px black;
+          box-shadow: 0px 2px 2px black;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.about-BFTI p {
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.black-box {
+  background-color: #000;
+}
+
+.director-container {
+  margin-top: 20px;
+}
+
+.director-container .row {
+  color: #fff;
+}
+
+.director-container .row .col-sm-4 {
+  background-image: url(/images/Director.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.director-container .row .col-sm-8 {
+  padding: 25px;
+}
+
+.director-container .row .col-sm-8 .text {
+  font-size: 1.4rem;
+}
+
+.director-container .row .col-sm-8 .title {
+  text-align: right;
+  font-size: 1.8rem;
+}
+
+.director-container .row .col-sm-8 .designation {
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+.courses h1 {
+  color: #fff;
+  margin-top: 15px;
+  text-align: center;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+}
+
+.courses h1 span {
+  font-family: 'lobster', sans-serif;
+  border-bottom: 4px solid #CCC;
+  border-radius: 5px;
+}
+
+.courses h1 span:hover {
+  border-color: #fff;
+}
+
+.courses .card-group {
+  margin-top: 40px;
+}
+
+.courses .card-group .card {
+  border: none;
+  margin: 10px;
+  background-color: #000;
+}
+
+.courses .card-group .card .course-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.courses .card-group .card .course-img1 {
+  background-image: url(/images/shishir.jpg);
+}
+
+.courses .card-group .card .course-img2 {
+  background-image: url(/images/mewatiSir.jpg);
+}
+
+.courses .card-group .card .course-img3 {
+  background-image: url(/images/cardDance.jpg);
+}
+
+.courses .card-group .card .course-img4 {
+  background-image: url(/images/Girlfriend.jpg);
+}
+
+.courses .card-group .card .card-body .card-text, .courses .card-group .card .card-body .card-title {
+  color: #fff;
+}
+
+.courses .card-group .card .card-body .card-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.courses .card-group .card .card-body .card-text a:hover {
+  text-decoration: underline;
+}
+
+.why .why-cards .card {
+  background-color: #000;
+  border: none;
+  margin: 20px;
+  height: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.why .why-cards .card .rich-icon {
+  padding: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.why .why-cards .card .rich-icon p {
+  margin-top: -10px;
+}
+
+.why .why-cards .card .rich-icon1 img {
+  width: 110px;
+}
+
+.why .why-cards .card .rich-icon2 img {
+  width: 80px;
+}
+
+.why .why-cards .card .rich-icon3 img {
+  width: 95px;
+}
+
+.why .why-cards .card .rich-icon4 img {
+  width: 70px;
+}
+
+.why .why-cards .card .card-text {
+  color: #FDFA73;
+}
+
+.footer-box {
+  margin-top: auto;
+  padding: 10px;
+}
+
+.footer-box .links {
+  width: 100%;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-box .links .address {
+  cursor: pointer;
+}
+
+.footer-box .links .address p {
+  color: #9e9e9e;
+}
+
+.footer-box .links .address p:hover {
+  color: #fff;
+}
+
+.footer-box .links .s-links .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-box .links .s-links .link a {
+  color: #9e9e9e;
+  font-size: 1.2rem;
+}
+
+.footer-box .links .s-links .link a:hover {
+  color: #fff;
+}
+
+.footer-box .links .contacts div {
+  color: #9e9e9e;
+}
+
+.footer-box .links .contacts div a {
+  color: #9e9e9e;
+  text-decoration: none;
+}
+
+.footer-box .links .contacts div a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.faculties .row {
+  margin: 25px 0px;
+}
+
+.faculties .row .col-sm-4 {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.faculties .row .faculty-1 {
+  background-image: url(/images/Ramendra.jpg);
+}
+
+.faculties .row .faculty-2 {
+  background-image: url(/images/Bhagat1.jpg);
+}
+
+.faculties .row .faculty-3 {
+  background-image: url(/images/mewatiSir.jpg);
+}
+
+.faculties .row .faculty-4 {
+  background-image: url(/images/Nitin.jpg);
+}
+
+.faculties .row .col-sm-8 h4 {
+  font-size: 1.6rem;
+}
+
+.faculties .row .col-sm-8 p {
+  font-size: 1.3rem;
+}
+
+.productions {
+  text-align: left;
+}
+
+.productions .row {
+  margin: 25px 0px;
+  padding: 2%;
+  cursor: pointer;
+  -webkit-transition: .5s all ease-in;
+  transition: .5s all ease-in;
+}
+
+.productions .row .col-sm-4 {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.productions .row .production-1 {
+  background-image: url(/images/Shortfilms/Girlfriend.jpg);
+}
+
+.productions .row .production-2 {
+  background-image: url(/images/Shortfilms/chitchat.jpg);
+}
+
+.productions .row .production-3 {
+  background-image: url(/images/Shortfilms/paranoia.jpg);
+}
+
+.productions .row .production-4 {
+  background-image: url(/images/Shortfilms/trickster2.jpg);
+}
+
+.productions .row .production-5 {
+  background-image: url(/images/Shortfilms/astitva.jpg);
+}
+
+.productions .row .production-6 {
+  background-image: url(/images/Shortfilms/128seconds.jpg);
+}
+
+.productions .row .production-7 {
+  background-image: url(/images/Shortfilms/trickster.jpg);
+}
+
+.productions .row .production-8 {
+  background-image: url(/images/Shortfilms/chuppi.jpg);
+}
+
+.productions .row .col-sm-8 h5 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.productions .row .col-sm-8 p {
+  font-size: 1.1rem;
+}
+
+.productions .row .col-sm-8 .course-details {
+  font-weight: bolder;
+}
+
+.productions .row:hover {
+  -webkit-box-shadow: 1px 1px 1px 1px #000;
+          box-shadow: 1px 1px 1px 1px #000;
+}
+
+.pic-container {
+  height: 32vh;
+  background-image: url(/images/camera.jpg);
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.pic-container h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.pic-container h1:hover {
+  text-decoration: underline;
+}
+
+.contact p {
+  font-size: 1.2rem;
+}
+
+.contact p span {
+  font-weight: bold;
+}
+
+.courses .accordion-button:after, .courses .accordion-button:before {
+  display: none;
+}
+
+.courses :focus {
+  outline: 0 !important;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.courses .course1 {
+  margin: 30px auto;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #000;
+}
+
+.courses .course1 h4 {
+  padding-top: 10px;
+  color: #fff;
+}
+
+.courses .accordion-body {
+  overflow-x: auto;
+}
+
+.courses .accordion-body table {
+  border: 1px solid #000;
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.courses .accordion-body table thead {
+  background-color: #000;
+}
+
+.courses .accordion-body table thead th {
+  color: #fff;
+}
+
+.courses .accordion-body table tr, .courses .accordion-body table th, .courses .accordion-body table td {
+  padding: 5px 15px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.courses .accordion-body table tbody tr:hover {
+  background-color: #e7e4e4;
+}
+
+.blog-form {
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+  .hero-container .hero-arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 67vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    top: -25px;
+  }
+  .hero-container .hero-arrow img {
+    height: 60px;
+    -webkit-transition: 1s all ease-out;
+    transition: 1s all ease-out;
+    -webkit-animation-name: up-down;
+            animation-name: up-down;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes up-down {
+    from {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    to {
+      -webkit-transform: translateY(25px);
+              transform: translateY(25px);
+    }
+  }
+  @keyframes up-down {
+    from {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    to {
+      -webkit-transform: translateY(25px);
+              transform: translateY(25px);
+    }
+  }
+  .nav-container {
+    height: 13vh;
+    width: 100%;
+  }
+  .nav-container .navbar {
+    position: relative;
+    width: 100vw;
+  }
+  .nav-container .navbar .logo {
+    margin-left: 5%;
+  }
+  .nav-container .navbar .hamburger {
+    display: inline;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .nav-container .navbar .nav-links {
+    z-index: 1;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #000;
+    width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0%;
+    clip-path: circle(50px at 100% -10%);
+    -webkit-clip-path: circle(50px at 100% -10%);
+    -webkit-transition: 1s all ease-out;
+    transition: 1s all ease-out;
+    pointer-events: none;
+  }
+  .nav-container .navbar .nav-links.open {
+    clip-path: circle(1000px at 100% -10%);
+    -webkit-clip-path: circle(1000px at 100% -10%);
+    pointer-events: all;
+  }
+  .nav-container .navbar .nav-links li {
+    opacity: 0;
+  }
+  .nav-container .navbar .nav-links li a {
+    position: relative;
+    font-size: 25px;
+    left: -20%;
+  }
+  .nav-container .navbar .nav-links li:nth-child(1) {
+    -webkit-transition: all 0.5s ease 0.2s;
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-container .navbar .nav-links li:nth-child(2) {
+    -webkit-transition: all 0.5s ease 0.4s;
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-container .navbar .nav-links li:nth-child(3) {
+    -webkit-transition: all 0.5s ease 0.6s;
+    transition: all 0.5s ease 0.6s;
+  }
+  .nav-container .navbar .nav-links li:nth-child(4) {
+    -webkit-transition: all 0.5s ease 0.8s;
+    transition: all 0.5s ease 0.8s;
+  }
+  .nav-container .navbar .nav-links li:nth-child(5) {
+    -webkit-transition: all 0.5s ease 1s;
+    transition: all 0.5s ease 1s;
+  }
+  .nav-container .navbar .nav-links li:nth-child(6) {
+    -webkit-transition: all 0.5s ease 1.2s;
+    transition: all 0.5s ease 1.2s;
+  }
+  .nav-container .navbar li.fade {
+    opacity: 1;
+  }
+  .director-container .row .col-sm-4 {
+    padding-top: 100%;
+  }
+  .footer-box .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-box .links .address, .footer-box .links .s-links, .footer-box .links .contacts {
+    margin: 15px 0px;
+  }
+  .faculties .row .col-sm-4 {
+    padding-top: 100%;
+  }
+  .productions .row .col-sm-4 {
+    padding-top: 50%;
+  }
+  .productions .row .col-sm-8 h5 {
+    margin-top: 10px;
+  }
+  .pic-container {
+    background-size: cover;
+  }
+  .pic-container h1 {
+    font-size: 2rem;
+  }
+  .courses .course1 img {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

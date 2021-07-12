@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+    <main class="container">
+        <div class="col-md-8" style="margin: 0 auto;">
+            <div class="card mb-3 text-center">
+                <h3 class="card-title display-5"><strong>Title :- </strong><%= data.title %> </h3>
+                <img src="<%= data.img %> " class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><strong>Blog Category :-</strong> <%= data.category %></p>
+                    <p class="card-text"><strong>Description :-</strong> <%= data.desc %> </p>
+                    <p class="card-text"><small class="text-muted">Blog Created on <%= date %> </small></p>
+                    <a href="/blogs/<%= data._id %>/edit " class="btn-sm btn btn-dark">Edit</a>
+                </div>
+            </div>
+        </div>
+    </main>
+<%- include('../partials/footer') %>
